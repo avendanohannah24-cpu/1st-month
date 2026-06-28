@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For my baobei</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("navy.jpg");
+  font-family: Arial, sans-serif;
+}
+
+/* CENTER EACH SCREEN PROPERLY */
+.screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* HIDE */
+.hidden {
+  display: none;
+}
+
+/* QUESTION */
+h3 {
+  font-family: "Times New Roman", serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #1a3b6e;
+  color: white;
+  font-weight: bold;
+}
+
+/* ENVELOPE */
+.envelope-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#envelope {
+  width: 350px;
+  display: block;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
+}
+
+.envelope-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(26, 59, 110, 0.9);
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* LETTER (ONLY THIS SCROLLS) */
+.letter {
+  font-family: "Times New Roman", serif;
+  width: 280px;
+  max-height: 70vh;
+  overflow-y: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  text-align: left;
+  padding: 20px;
+  border-radius: 12px;
+  background-image: url("letter.jpg");
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+.letter h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+<audio id="bgMusic" src="music.mp3"></audio>
+<!-- QUESTION SCREEN -->
+<div id="questionBox" class="screen">
+  <div>
+    <h3>What was my first message to you?</h3>
+    <input type="text" id="answer" placeholder="Hehehehehehehehehe">
+    <br>
+    <button onclick="checkAnswer()">OWKIE</button>
+  </div>
+</div>
+
+<!-- ENVELOPE SCREEN -->
+<div id="envelopeBox" class="screen hidden">
+  <div class="envelope-wrapper">
+
+    <img id="envelope" src="envelope.png">
+
+    <button class="envelope-btn" onclick="openLetter()">
+      press here, bebi 💌
+    </button>
+
+  </div>
+</div>
+
+<!-- LETTER SCREEN -->
+<div id="letterBox" class="screen hidden">
+  <div class="letter">
+
+    <h3 style="color:black;">HAPPY MONTHSARY!</h3>
+
+    <p>
+      Happy monthsary, babyy! 🥰
+<br> <br> 
+Words aren’t enough to explain how happy I am to celebrate this day with you. You have no idea how much my heart and mind scream my love for you in the gentlest possible way. I hope you know that I will always love you in every way possible, bao. Never forget how much you mean to me and how grateful I am to have you in my life, because having you here has made a lot of things easier, made my days better, and made my problems bearable. <br><br> 
+
+Alam mo whenever I make love letters for you, I am always out of words—not because I don’t know what to say, but because there are no right words to tell you how much I love and care for you. I know that the past months have tested our love many times. It left a wound, but I hope that our love can heal it. Our problems have made us say hurtful words to each other that led us to the most difficult decisions, but I’m grateful that you’re still choosing to make things right with me. No matter how exhausting our situation is, no matter how hard it is to love despite the pain, I hope you always find a reason to stay. Because I’m sure that these difficulties will bring us a deeper love, greater trust, and a stronger bond.
+<br><br> 
+I’m sorry for the times I fail as your girlfriend, as your best friend, and as a person. I’m sorry for the pain I’ve given you, for the times I chose to explain instead of understanding your thoughts and feelings first. My love may not be perfect, but I’m sure that my love is great enough that I’m willing to give you the love, care, and understanding that you need. I know that I have disappointed you many times already, but I hope you know that I’m doing my best to be the best version of myself for you. And despite those imperfections you’ve seen, you still stayed. I hope we can fix every argument we’ll have by still making each other feel loved. I hope that our love is greater than the pain we’ve felt. I won’t promise to be perfect, but I promise that I will love you through it all.
+<br><br> 
+You’re so intertwined with my soul that I can’t fathom a life without you. No, that doesn’t make me a fool—it just shows how much I love you and how deeply our love has embraced me. I don’t want you leaving my life, bao. I don’t want you leaving the life we planned, the love we shared, the trust we built, and the bond we made. Despite the storms in our life, I hope you always find a reason to make our love your shelter—your safe place. I want you to always remember that you’re the only person I want to love forever. I realized that I love you this much when I started doing things I normally don’t—when I started looking at the brighter side of life, when I started planning a life, and when I badly wanted to live long just to be able to love you for a long time. For me, to love you is to know you, to embrace your flaws. To love your vulnerable side and to accept you no matter what. Not because I have to but because I want to, I want to love you even more during the times you feel undeserving of love and efforts. And as a promise I will continue loving you deeper as day passes by.
+<br><br> 
+I am forever loud and proud to have you. You’re a beautiful person, baby—not just physically, as I always say. You have this kind of beauty that never fails to amaze me. You’re an extraordinary person, babe, and I hope you realize that. Instead of looking at your flaws, look at them in a way that makes you unique from other people. Your imperfections are not ugliness—they are marks of you being yourself. I never loved you for what you gave me, bao. I love you for being you. I love the version you show me, the version shaped by pain, the vulnerable version of you, because despite those struggles, you keep choosing to continue and improve.
+<br><br> 
+Thank you for giving me the love and understanding I never knew I deserved. Thank you for the efforts, the care, and the time you keep giving me. I pray that if you ever get tired of giving me those, you always find a reason to rest and continue our love. I hope your love will always be greater than the difficult times we had and will have. I pray that this new month for our love will make our bond stronger and our love deeper than before. I pray that we always choose to fix and stay, to improve and respect each other. To our laughters, our cries, to our cute little ways of showing our love for each other, to our bond, and to our future—I hope we can look back at all of these and tell each other how happy and grateful we are that we stayed through those times.
+<br><br> 
+I love you forever and beyond, always in all ways, to the moon, the stars, the galaxies, the infinity, and back.
+I love you too much, my baby.
+Thank you for everything, my baobaoo!!
+<br><br> 
+HAPPY 1ST OFFICIAL MONTHSARY 😘
+    </p>
+
+  </div>
+</div>
+
+<script>
+  const music=
+  document.getElementById("bgMusic");
+  
+  function playMusicSmooth() {
+    music.volume = 0; // start silent
+    music.play();
+    let volume = 0;
+    const fade= setInterval(() => {
+      if (volume < 0.3) { // MAX VOLUME (not too loud)
+      volume += 0.02;
+      music.volume = volume;
+    } else {
+      clearInterval(fade);
+    }
+  }, 200); // speed of fade (lower=faster)
+  }
+function checkAnswer() {
+  let input = document.getElementById("answer").value.toLowerCase().trim();
+
+  if (input.trim().toLowerCase() ==="uy") {
+    playMusicSmooth(); 
+    document.getElementById("questionBox").classList.add("hidden");
+    document.getElementById("envelopeBox").classList.remove("hidden");
+  } else {
+    alert("Di mo na ko love :(");
+  }
+}
+
+function openLetter() {
+  document.getElementById("envelopeBox").classList.add("hidden");
+  document.getElementById("letterBox").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
